@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+    <div class="background"> 
+              
+        <div class="backgroundCards">
+            <p class="cardImage cardImageNumber">0000 0000 0000 0000</p>  
+            <p class="cardImage cardImageName">Jane Appleseed</p>  
+            <p class="cardImage cardImageDate">00/00</p>  
+            <p class="cardImage cardImageCVC">000</p> 
+            <img class="card1" src="" alt="">    
+            <img class="card2" src="" alt=""> 
+            <img class="cardLogo" src="images\card-logo.svg" alt="">
+        </div>
+    </div>
+    <form action="">
+        <div class="errorContainerName">
+            <p>Cardholder Name</p>
+            <input type="text" class="input inputName" placeholder="e.g. Jane Appleseed"/>
+        </div>
+        <div class="errorContainerCardNumber">
+            <p>Card Number</p>
+            <input type="text" class="input inputCardNumber" placeholder="e.g. 1234 5678 9123 0000"/>
+        </div>
+        <div class="errorContainerExpDateCVC">
+            <div class="expDate">
+                <p>Exp. Date (MM/YY)</p>
+                <input type="month" class="input inputMonth" placeholder="MM"/>
+                <input type="year" class="input inputYear" placeholder="YY"/>
+            </div>
+            <div class="CVC">
+                <p>CVC</p>
+                <input type="text" class="input inputCVC" placeholder="e.g. 123"/>
+            </div>
+        </div>
+        <input onclick=activeState() type="button" class="inputConfirm" value="Confirm"/>
+    </form>
+    <div class="completedStateContainer">
+        <img class="completedStateIcon" src="images\icon-complete.svg" alt="completedStateIcon">
+        <p class="completedStateThankYou">Thank you!</p> 
+        <p class="completedStateText">We've added your card details</p>   
+        <input class="completedStateButton" type="button" value="Continue">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
